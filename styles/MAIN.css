@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #22272b;
+}
+
+.menu {
+  background-color: #ffffff !important;
+  display: flow-root;
+  padding: 0 10%;
+}
+
+#check {
+  display: none;
+}
+
+.logo-header {
+  display: table;
+  float: left;
+  vertical-align: middle;
+  padding: 0;
+  color: #efbb20;
+  margin: 0;
+  width: 180px;
+  height: 68px;
+  position: relative;
+  z-index: 9;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.logo-header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  right: -50px;
+  width: 80%;
+  transform: skew(30deg);
+  background-color: #8a0000;
+}
+.logo-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  right: 10%;
+  width: 2000px;
+  background-color: #8a0000;
+}
+.logo-header a {
+  color: #ffffff;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 70px;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 70px;
+  border-radius: 14px;
+}
+nav li a {
+  padding: 15px 25px;
+  border: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #b30000;
+  opacity: 1;
+  text-decoration: none;
+  border-radius: 14px;
+  transition: all 0.5s;
+}
+nav li:hover a {
+  color: #ffffff;
+  background-color: #8a0000;
+  border-radius: 14px;
+}
+
+ul {
+  float: right;
+}
+
+.PART_1 img {
+  display: block;
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  border-bottom: 10px solid #ffffff;
+}
+
+.PART_2 {
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Service {
+  display: inline-block;
+  width: 33%;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 50px;
+}
+.Service:hover {
+  background: #8a0000;
+  border-radius: 50px;
+}
+.Service:hover h2,
+.Service:hover p {
+  color: #ffffff;
+}
+.Service i {
+  color: #22272b;
+  font-size: 34px;
+  position: relative;
+  left: -100px;
+  top: 40px;
+}
+.Service h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.Service p {
+  color: #b30000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+  .menu {
+    padding: 0 2%;
+  }
+  nav li a {
+    padding: 15px 20px;
+  }
+  .bouton-check {
+    float: right;
+    width: 20px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    top: 25px;
+    display: none;
+  }
+  .bouton-check span {
+    background-color: #8a0000;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0);
+    transition: 0.25s ease-in-out;
+  }
+  .bouton-check span:nth-child(1) {
+    top: 0;
+  }
+  .bouton-check span:nth-child(2) {
+    top: 7px;
+  }
+  .bouton-check span:nth-child(3) {
+    top: 14px;
+  }
+}
+@media (max-width: 961px) {
+  .main-menu {
+    padding: 0 10%;
+  }
+  .bouton-check {
+    display: block;
+    margin-right: 40px;
+  }
+  nav ul {
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    background: #ffffff;
+    top: 68px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .Service {
+    width: 50%;
+  }
+  .Service i {
+    float: left;
+    margin-left: 3%;
+  }
+  .Service p,
+  .Service h2 {
+    margin-left: 15%;
+  }
+}
+@media (max-width: 481px) {
+  nav ul {
+    display: block;
+    width: 100%;
+  }
+  .Service {
+    width: 100%;
+  }
+  .Service i {
+    float: left;
+    margin-left: 5%;
+  }
+  .Service p,
+  .Service h2 {
+    margin-left: 20%;
+  }
+}

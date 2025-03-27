@@ -1,0 +1,15 @@
+$breakpoints: (
+  desktop: 1025px,
+  tablet: 961px,
+  mobile: 481px,
+);
+
+@mixin respond($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @warn "⚠️ Warning: '#{$size}' is not a valid breakpoint!";
+  }
+}

@@ -1,0 +1,41 @@
+@include respond("tablet") {
+  .main-menu {
+    padding: 0 10%;
+  }
+  .bouton-check {
+    display: block;
+    margin-right: 40px;
+  }
+
+  nav {
+    ul {
+      position: fixed;
+      width: 350px;
+      height: 100vh;
+      background: #ffffff;
+      top: 68px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .Service {
+    width: 50%;
+    i {
+      float: left;
+      margin-left: 3%;
+    }
+    p,
+    h2 {
+      margin-left: 15%;
+    }
+  }
+}

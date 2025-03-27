@@ -1,0 +1,42 @@
+@include respond("desktop") {
+  .menu {
+    padding: 0 2%;
+  }
+  nav li a {
+    padding: 15px 20px;
+  }
+  .bouton-check {
+    float: right;
+    width: 20px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    top: 25px;
+    display: none;
+
+    span {
+      background-color: $CRIMSON_RED;
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      border-radius: 1px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 7px;
+      }
+      &:nth-child(3) {
+        top: 14px;
+      }
+    }
+  }
+}

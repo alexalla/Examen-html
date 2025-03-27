@@ -1,0 +1,17 @@
+@include respond("mobile") {
+  nav ul {
+    display: block;
+    width: 100%;
+  }
+  .Service {
+    width: 100%;
+    i {
+      float: left;
+      margin-left: 5%;
+    }
+    p,
+    h2 {
+      margin-left: 20%;
+    }
+  }
+}

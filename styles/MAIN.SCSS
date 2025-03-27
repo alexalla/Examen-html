@@ -1,0 +1,163 @@
+$BACKGROUND-COLOR: #22272b;
+$CRIMSON_RED: #8a0000;
+
+//@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+//@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+//@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+//@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+//@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+//@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+//https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile
+
+$BACKGROUND-COLOR: #22272b;
+$CRIMSON_RED: #8a0000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $BACKGROUND-COLOR;
+}
+.menu {
+  background-color: #ffffff !important;
+  display: flow-root;
+  padding: 0 10%;
+}
+#check {
+  display: none;
+}
+.logo-header {
+  display: table;
+  float: left;
+  vertical-align: middle;
+  padding: 0;
+  color: #efbb20;
+  margin: 0;
+  width: 180px;
+  height: 68px;
+  position: relative;
+  z-index: 9;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: -50px;
+    width: 80%;
+    transform: skew(30deg);
+    background-color: $CRIMSON_RED;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: 10%;
+    width: 2000px;
+    background-color: $CRIMSON_RED;
+  }
+  a {
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 70px;
+    text-decoration: none;
+  }
+}
+nav {
+  ul li {
+    display: inline-block;
+    line-height: 70px;
+    border-radius: 14px;
+  }
+  li a {
+    padding: 15px 25px;
+    border: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #b30000;
+    opacity: 1;
+    text-decoration: none;
+    border-radius: 14px;
+    transition: all 0.5s;
+  }
+
+  li:hover a {
+    color: #ffffff;
+    background-color: $CRIMSON_RED;
+    border-radius: 14px;
+  }
+}
+
+ul {
+  float: right;
+}
+
+.PART_1 {
+  img {
+    display: block;
+    object-fit: fill;
+    width: 100%;
+    border-bottom: 10px solid #ffffff;
+  }
+}
+
+.PART_2 {
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+.Service {
+  display: inline-block;
+  width: 33%;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 50px;
+
+  &:hover {
+    background: $CRIMSON_RED;
+    border-radius: 50px;
+    h2,
+    p {
+      color: #ffffff;
+    }
+  }
+  i {
+    color: $BACKGROUND-COLOR;
+    font-size: 34px;
+    position: relative;
+    left: -100px;
+    top: 40px;
+  }
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #b30000;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@import "variables";
+@import "desktop"; // Desktop (default)
+@import "tablet"; // Tablet styles (inside respond mixin)
+@import "mobile"; // Mobile styles (inside respond mixin)
