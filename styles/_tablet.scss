@@ -28,14 +28,6 @@
     left: 0;
   }
   .Service {
-    width: 50%;
-    i {
-      float: left;
-      margin-left: 3%;
-    }
-    p,
-    h2 {
-      margin-left: 15%;
-    }
+    flex: 1 1 calc(50% - 20px); /* Two columns when screen is smaller */
   }
 }

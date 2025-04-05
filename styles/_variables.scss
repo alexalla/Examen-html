@@ -1,7 +1,7 @@
 $breakpoints: (
   desktop: 1025px,
   tablet: 961px,
-  mobile: 481px,
+  mobile: 600px,
 );
 
 @mixin respond($size) {
