@@ -12,5 +12,26 @@
       flex-direction: column; /* Stack items vertically */
       align-items: center; /* Center items horizontally */
     }
+    li {
+      padding: 10px 0;
+      border-bottom: 2px solid $BACKGROUND-COLOR;
+    }
+    li + li::before {
+      float: left;
+      content: "";
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      margin-bottom: 1rem;
+    }
+    .cards .card.active {
+      transform: scale(1);
+    }
+    .bottom-bar {
+      visibility: visible;
+    }
   }
 }

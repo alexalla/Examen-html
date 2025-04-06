@@ -30,4 +30,83 @@
   .Service {
     flex: 1 1 calc(50% - 20px); /* Two columns when screen is smaller */
   }
+  @media (min-width: map-get($breakpoints, "mobile")) and (max-width: map-get($breakpoints, "tablet")) {
+    .card {
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+    }
+    .cards .card.active {
+      transform: scale(1);
+    }
+
+    .PART_4-toggle {
+      padding: 10px 10px;
+      width: 100%;
+    }
+    .cards {
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+    }
+    .card {
+      height: 75px;
+      width: 100%;
+      padding: 10px 10px;
+      margin: 30px 10px;
+
+      /* existing styles */
+      overflow: hidden;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .PART_4 {
+      flex-direction: column;
+      padding: 0px;
+      ul {
+        position: absolute;
+      }
+    }
+    .bottom-bar {
+      visibility: hidden;
+    }
+    #master {
+      visibility: visible;
+      position: relative;
+      top: -115px;
+      left: 235px;
+      border: none;
+    }
+    #professionel {
+      visibility: visible;
+      position: relative;
+      top: 125px;
+      left: 225px;
+      border: none;
+    }
+    #basic {
+      visibility: visible;
+      position: relative;
+      top: -115px;
+      left: 235px;
+      border: none;
+    }
+    .btn {
+      visibility: hidden;
+    }
+    .pack {
+      visibility: visible;
+      position: relative;
+      top: -45px;
+      right: 75px;
+      font-size: 25px;
+    }
+    .pack2 {
+      visibility: visible;
+      position: relative;
+      top: 200px;
+      right: 60px;
+      font-size: 25px;
+    }
+  }
 }

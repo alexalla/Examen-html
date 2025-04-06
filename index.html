@@ -50,33 +50,33 @@
       <div class="PART_2">
         <div class="Service">
           <i class="fas fa-anchor"></i>
-          <h2>Service 1</h2>
-          <p>Service 1 test 1234</p>
+          <h2>Github</h2>
+          <p>Mon github pour voir mes projets</p>
         </div>
         <div class="Service">
           <i class="fas fa-anchor"></i>
-          <h2>Service 2</h2>
-          <p>Service 2 test 1234</p>
+          <h2>Youtube</h2>
+          <p>Mon youtube pour voir mes vidéos</p>
         </div>
         <div class="Service">
           <i class="fas fa-anchor"></i>
-          <h2>Service 3</h2>
-          <p>Service 3 test 1234</p>
+          <h2>Instagram</h2>
+          <p>Mon instagram pour voir mes photos</p>
         </div>
         <div class="Service">
           <i class="fas fa-anchor"></i>
-          <h2>Service 4</h2>
-          <p>Service 4 test 1234</p>
+          <h2>Visual studio</h2>
+          <p>Pour telecharger visual studio</p>
         </div>
         <div class="Service">
           <i class="fas fa-anchor"></i>
-          <h2>Service 5</h2>
-          <p>Service 5 test 1234</p>
+          <h2>Le scss</h2>
+          <p>Pour apprendre le scss</p>
         </div>
         <div class="Service">
           <i class="fas fa-anchor"></i>
-          <h2>Service 6</h2>
-          <p>Service 6 test 1234</p>
+          <h2>Le javascript</h2>
+          <p>Pour apprendre le javascript</p>
         </div>
       </div>
 
@@ -101,16 +101,103 @@
         </figure>
       </div>
       <div class="PART_4">
-        <h1>Choose your plan</h1>
-        <h3>Choose a plan that's right for you</h3>
-        <button class="btn">montly</button>
-        <button class="btn">yearly</button>
-        <div class="plans">
-          <ul>
-            <li>Basic</li>
-            <li>Standard</li>
-            <li>Premium</li>
-          </ul>
+        <div class="PART_4-toggle">
+          <h1>Mon Contenu</h1>
+          <h3>choisissez un pack qui vous convient</h3>
+          <div class="toggle">
+            <label>Annually</label>
+            <div class="toggle-btn">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label class="sub" id="sub" for="checkbox">
+                <div class="circle"></div>
+              </label>
+            </div>
+            <label>Monthly</label>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card shadow">
+            <ul>
+              <li class="pack">Basic</li>
+              <li id="basic" class="price bottom-bar">42.69$</li>
+              <li class="bottom-bar">3 photos de mon chat</li>
+              <li class="bottom-bar">+2 points sur mon examen</li>
+              <li class="bottom-bar">Accès a mon github</li>
+              <li class="bottom-bar">accès a mon site</li>
+              <li class="bottom-bar">voila c'est tout</li>
+              <li><button class="btn">En savoir plus</button></li>
+            </ul>
+          </div>
+          <div class="card active">
+            <ul>
+              <li class="pack2">Professionnel</li>
+              <li id="professionel" class="price bottom-bar">4269$</li>
+              <li class="bottom-bar">10 photos de mon chat</li>
+              <li class="bottom-bar">+5 points sur mon examen</li>
+              <li class="bottom-bar">Accès a mon github</li>
+              <li class="bottom-bar">photo collector de mon chat</li>
+              <li><button class="btn active-btn">En savoir plus</button></li>
+            </ul>
+          </div>
+          <div class="card shadow">
+            <ul>
+              <li class="pack">Master</li>
+              <li id="master" class="price bottom-bar">4269 M</li>
+              <li class="bottom-bar">1000 photos de mon chat</li>
+              <li class="bottom-bar">+20 points sur mon examen</li>
+              <li class="bottom-bar">Accès a mon github</li>
+              <li class="bottom-bar">photo collector de mon chat</li>
+              <li class="bottom-bar">Vous adoptez mon chat</li>
+              <li><button class="btn active-btn">En savoir plus</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="right-section">
+          <div class="right-section-wrapper">
+            <h1 class="title">Learn to code by watching others</h1>
+            <h3 class="description">
+              See how experienced developers solve problems in real-time.
+              Watching tutorials is great, but understanding how developers
+              think is invaluable.
+            </h3>
+          </div>
+        </div>
+
+        <div class="left-section">
+          <div class="left-section-wrapper">
+            <div class="disclaimer">
+              <span class="disclaimer-highlight">
+                Try it free for 7 days!
+              </span>
+              <span class="disclaimer-text"> *$20/month thereafter. </span>
+            </div>
+            <div class="form">
+              <form autocomplete="off" action="#your-url">
+                <input
+                  type="text"
+                  class="first-name"
+                  placeholder="First Name"
+                  autocomplete="off"
+                />
+                <input type="text" class="last-name" placeholder="Last Name" />
+                <input type="email" class="email" placeholder="Email Address" />
+                <input
+                  type="password"
+                  class="password"
+                  placeholder="Password"
+                />
+                <button class="form-btn">
+                  <span class="form-btn-text">CLAIM YOUR FREE TRIAL</span>
+                </button>
+                <p class="terms">
+                  By clicking the button, you are agreeing to our
+                  <span class="terms-highlight"> Terms and Services </span>
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -136,5 +223,6 @@
         <p>All rights reserved a moi</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
