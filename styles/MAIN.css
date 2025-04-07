@@ -172,13 +172,6 @@ ul {
   font-weight: 500;
 }
 
-figure {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
 .PART_3 {
   padding: 10vh 5vh;
   background-color: #f7f7ff;
@@ -197,6 +190,7 @@ figure {
 .PART_3 figcaption {
   width: 100%;
   padding: 10vh 5vh;
+  font-size: 25px;
 }
 .PART_3 .chat1 {
   flex-direction: row;
@@ -214,13 +208,13 @@ figure {
 .PART_3 .chat2 img {
   width: 50%;
   height: auto;
+  top: -60px;
   z-index: 2;
 }
 .PART_3 .chat2 .chat3 {
   position: absolute;
   margin-left: 50%;
   margin-top: 10%;
-  top: -80%;
   right: -50px;
   left: 60px;
 }
@@ -510,7 +504,7 @@ footer ul li {
   align-items: center;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1920px) {
   .menu {
     padding: 0 0;
   }
@@ -548,6 +542,14 @@ footer ul li {
   }
   .bouton-check span:nth-child(3) {
     top: 14px;
+  }
+  .PART_3 .chat3 {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 10%;
+    top: -30%;
+    right: -50px;
+    left: 60px;
   }
 }
 @media (max-width: 961px) {
@@ -621,6 +623,17 @@ footer ul li {
     width: 80%;
     margin-left: 10%;
     margin-left: 10%;
+  }
+  .PART_3 .chat3 {
+    top: -15%;
+  }
+  .chat1,
+  .chat2 {
+    max-height: 200px;
+  }
+  .chat1 figcaption,
+  .chat2 figcaption {
+    font-size: 20px;
   }
 }
 @media (max-width: 961px) and (min-width: 600px) and (max-width: 961px) {
@@ -757,7 +770,7 @@ footer ul li {
     padding-bottom: 32px;
   }
   .description {
-    padding-bottom: 0px;
+    padding-bottom: 150px;
   }
   .left-section-wrapper {
     height: 65vh;
@@ -801,12 +814,22 @@ footer ul li {
   .PART_3 {
     flex-direction: column;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .PART_3 .chat1 {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .PART_3 .chat1 figcaption {
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 80px;
   }
   .PART_3 .chat1 img {
-    width: 50%;
+    width: 85%;
     height: 20%;
   }
   .PART_3 .chat2 {
@@ -814,10 +837,22 @@ footer ul li {
     flex-direction: column;
     position: relative;
     padding-right: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .PART_3 .chat2 figcaption {
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 80px;
+    z-index: 2;
   }
   .PART_3 .chat2 img {
-    width: 50%;
-    height: auto;
+    width: 90%;
+    height: 18%;
     z-index: 2;
+  }
+  .PART_3 .chat3 {
+    visibility: hidden;
   }
 }

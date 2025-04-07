@@ -80,6 +80,18 @@
     margin-left: 10%;
     margin-left: 10%;
   }
+  .PART_3 {
+    .chat3 {
+      top: -15%;
+    }
+  }
+  .chat1,
+  .chat2 {
+    max-height: 200px;
+    figcaption {
+      font-size: 20px;
+    }
+  }
 
   @media (min-width: map-get($breakpoints, "mobile")) and (max-width: map-get($breakpoints, "tablet")) {
     .card {

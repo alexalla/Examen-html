@@ -63,7 +63,7 @@
   }
 
   .description {
-    padding-bottom: 0px;
+    padding-bottom: 150px;
   }
 
   .left-section-wrapper {
@@ -111,10 +111,20 @@
   .PART_3 {
     flex-direction: column;
     display: flex;
+    justify-content: center;
+    align-items: center;
     .chat1 {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      figcaption {
+        position: absolute;
+        color: #ffffff;
+        font-size: 12px;
+        padding-left: 80px;
+      }
       img {
-        width: 50%;
+        width: 85%;
         height: 20%;
       }
     }
@@ -123,11 +133,23 @@
       flex-direction: column;
       position: relative;
       padding-right: 5%;
-      img {
-        width: 50%;
-        height: auto;
+      justify-content: center;
+      align-items: center;
+      figcaption {
+        position: absolute;
+        color: #ffffff;
+        font-size: 12px;
+        padding-left: 80px;
         z-index: 2;
       }
+      img {
+        width: 90%;
+        height: 18%;
+        z-index: 2;
+      }
+    }
+    .chat3 {
+      visibility: hidden;
     }
   }
 }
