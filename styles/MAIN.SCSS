@@ -189,6 +189,12 @@ ul {
     font-weight: 500;
   }
 }
+figure {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; // optional if on small screens
+}
 
 .PART_3 {
   padding: 10vh 5vh;
