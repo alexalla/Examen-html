@@ -14,8 +14,8 @@ body {
   background-color: #f7f7ff;
   display: flow-root;
   padding: 0 10%;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 3;
 }
@@ -538,17 +538,14 @@ footer ul li {
   }
 }
 @media (max-width: 961px) {
-  .main-menu {
-    padding: 0 10%;
-  }
   .bouton-check {
     display: block;
     margin-right: 40px;
   }
   nav ul {
     position: fixed;
-    width: 350px;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: #ffffff;
     top: 68px;
     left: -100%;
@@ -698,8 +695,14 @@ footer ul li {
   }
 }
 @media (max-width: 600px) {
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 80%;
+    z-index: 3;
+  }
   .PART_1 h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   nav ul {
     display: block;

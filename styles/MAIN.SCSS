@@ -23,17 +23,11 @@ body {
   background-color: $BACKGROUND-COLOR;
 }
 .menu {
-  //background-image: url("../images/cherry.jpg");
   background-color: #f7f7ff;
-  //background-color: #ffffff;
-  //background-size: cover;
-  //background-size: 90%;
-  //background-position: right;
-  //background-repeat: no-repeat;
   display: flow-root;
   padding: 0 10%;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 3;
 }
