@@ -1,4 +1,4 @@
-@include respond("tablet") {
+@include respond(tablet) {
   .bouton-check {
     display: block;
     margin-right: 40px;
@@ -79,15 +79,6 @@
     width: 80%;
     margin-left: 10%;
     margin-left: 10%;
-  }
-  @media screen and (max-width: 400px) {
-    .right-section-wrapper {
-      height: 75vh;
-    }
-
-    .title {
-      padding-top: 20px;
-    }
   }
 
   @media (min-width: map-get($breakpoints, "mobile")) and (max-width: map-get($breakpoints, "tablet")) {

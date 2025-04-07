@@ -11,7 +11,11 @@ $CRIMSON_RED: #8a0000;
 
 $BACKGROUND-COLOR: #22272b;
 $CRIMSON_RED: #8a0000;
-
+html,
+body,
+header {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;

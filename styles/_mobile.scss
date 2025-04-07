@@ -1,8 +1,8 @@
-@include respond("mobile") {
+@include respond(mobile) {
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 80%;
+    width: 100%;
     z-index: 3;
   }
   .PART_1 {
@@ -101,7 +101,7 @@
   }
   @media screen and (max-width: 400px) {
     .right-section-wrapper {
-      height: 75vh;
+      height: 20vh;
     }
 
     .title {

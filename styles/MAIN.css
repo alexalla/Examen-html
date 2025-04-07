@@ -1,3 +1,9 @@
+html,
+body,
+header {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -499,7 +505,7 @@ footer ul li {
 
 @media (max-width: 1025px) {
   .menu {
-    padding: 0 2%;
+    padding: 0 0;
   }
   nav li a {
     padding: 15px 20px;
@@ -610,14 +616,6 @@ footer ul li {
     margin-left: 10%;
   }
 }
-@media screen and (max-width: 961px) and (max-width: 400px) {
-  .right-section-wrapper {
-    height: 75vh;
-  }
-  .title {
-    padding-top: 20px;
-  }
-}
 @media (max-width: 961px) and (min-width: 600px) and (max-width: 961px) {
   .card {
     margin-bottom: 1rem;
@@ -698,7 +696,7 @@ footer ul li {
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 80%;
+    width: 100%;
     z-index: 3;
   }
   .PART_1 h1 {
@@ -786,7 +784,7 @@ footer ul li {
 }
 @media screen and (max-width: 600px) and (max-width: 400px) {
   .right-section-wrapper {
-    height: 75vh;
+    height: 20vh;
   }
   .title {
     padding-top: 20px;

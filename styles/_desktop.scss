@@ -1,6 +1,6 @@
-@include respond("desktop") {
+@include respond(desktop) {
   .menu {
-    padding: 0 2%;
+    padding: 0 0;
   }
   nav li a {
     padding: 15px 20px;
