@@ -30,6 +30,74 @@
   .Service {
     flex: 1 1 calc(50% - 20px); /* Two columns when screen is smaller */
   }
+  .PART_3 {
+    .chat3 {
+    }
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .right-section-wrapper {
+    height: 30vh;
+    padding: 0 5% 0 5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 42px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .description {
+    padding-bottom: 0px;
+  }
+
+  .left-section-wrapper {
+    height: 65vh;
+  }
+
+  .form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+
+  .form input {
+    width: 80%;
+    padding: 16px;
+    margin-left: 10%;
+    margin-left: 10%;
+    align-self: center;
+  }
+
+  .form button {
+    width: 80%;
+    padding: 16px;
+    margin-left: 10%;
+    margin-left: 10%;
+    align-self: center;
+  }
+
+  .form p {
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+  }
+  @media screen and (max-width: 400px) {
+    .right-section-wrapper {
+      height: 75vh;
+    }
+
+    .title {
+      padding-top: 20px;
+    }
+  }
+
   @media (min-width: map-get($breakpoints, "mobile")) and (max-width: map-get($breakpoints, "tablet")) {
     .card {
       margin-bottom: 1rem;
@@ -46,7 +114,7 @@
     .cards {
       display: flex;
       flex-direction: row;
-      width: 500px;
+      width: 550px;
     }
     .card {
       height: 75px;

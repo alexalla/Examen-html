@@ -11,9 +11,13 @@ body {
 }
 
 .menu {
-  background-color: #ffffff;
+  background-color: #f7f7ff;
   display: flow-root;
   padding: 0 10%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 3;
 }
 
 #check {
@@ -25,7 +29,7 @@ body {
   float: left;
   vertical-align: middle;
   padding: 0;
-  color: #efbb20;
+  color: #f7f7ff;
   margin: 0;
   width: 180px;
   height: 68px;
@@ -92,17 +96,28 @@ ul {
   float: right;
 }
 
+.PART_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .PART_1 iframe {
   display: block;
   -o-object-fit: fill;
      object-fit: fill;
   width: 100%;
-  border-bottom: 10px solid #ffffff;
   height: 91vh;
+}
+.PART_1 h1 {
+  color: #f7f7ff;
+  font-size: 50px;
+  position: relative;
+  top: 300px;
 }
 
 .PART_2 {
-  background: #ffffff;
+  background: #f7f7ff;
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -152,7 +167,8 @@ ul {
 }
 
 .PART_3 {
-  padding: 10vh 10vh;
+  padding: 10vh 5vh;
+  background-color: #f7f7ff;
 }
 .PART_3 figure {
   display: flex;
@@ -167,14 +183,37 @@ ul {
 }
 .PART_3 figcaption {
   width: 100%;
-  padding: 10vh 10vh;
-  background-color: #efbb20;
+  padding: 10vh 5vh;
 }
 .PART_3 .chat1 {
   flex-direction: row;
 }
+.PART_3 .chat1 img {
+  width: 50%;
+  height: 20%;
+}
 .PART_3 .chat2 {
+  display: flex;
   flex-direction: row-reverse;
+  position: relative;
+  padding-right: 5%;
+}
+.PART_3 .chat2 img {
+  width: 50%;
+  height: auto;
+  z-index: 2;
+}
+.PART_3 .chat2 .chat3 {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 10%;
+  top: -80%;
+  right: -50px;
+  left: 60px;
+}
+.PART_3 .chat2 .chat3 img {
+  width: 90%;
+  z-index: 1;
 }
 
 .PART_4 {
@@ -328,6 +367,7 @@ ul {
   display: flex;
   flex-direction: row;
   /*   flex-wrap: nowrap; */
+  background: #f7f7ff;
 }
 
 .right-section {
@@ -352,11 +392,13 @@ ul {
   font-size: 48px;
   font-weight: 700;
   padding-bottom: 32px;
+  color: #22272b;
 }
 
 .description {
   font-weight: 500;
   padding-bottom: 30px;
+  color: #22272b;
 }
 
 .left-section-wrapper {
@@ -367,35 +409,13 @@ ul {
   justify-content: center;
 }
 
-.disclaimer {
-  background-color: rgb(96, 85, 165);
-  width: 80%;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  align-content: center;
-  border-radius: 8px;
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-
-.disclaimer-text {
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.disclaimer-highlight {
-  font-weight: 700;
-  font-size: 12px;
-}
-
 .form {
   background: #fff;
   display: flex;
   width: 80%;
   flex-direction: column;
   padding-top: 32px;
-  border-radius: 8px;
+  border-radius: 25px;
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -425,7 +445,7 @@ ul {
   align-self: center;
   border-radius: 6px;
   color: white;
-  background: rgb(56, 204, 140);
+  background: linear-gradient(135deg, red 0%, #8a0000 100%);
   border: none;
 }
 
@@ -443,111 +463,6 @@ ul {
   margin-left: 10%;
 }
 
-.terms {
-  color: rgb(185, 182, 211);
-}
-
-.terms-highlight {
-  color: rgb(255, 122, 122);
-  font-weight: 600;
-}
-
-@media screen and (max-width: 900px) {
-  .disclaimer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-  }
-  .form {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-  }
-  .form input {
-    width: 80%;
-    padding: 16px;
-    margin-left: 10%;
-    margin-left: 10%;
-    align-self: center;
-  }
-  .form button {
-    width: 80%;
-    padding: 16px;
-    margin-left: 10%;
-    margin-left: 10%;
-    align-self: center;
-  }
-  .form p {
-    width: 80%;
-    margin-left: 10%;
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 600px) {
-  body {
-    background-image: url("https://github.com/panda-satyabrata/hosting-images/blob/main/singup_form_bg_mobile_codepen.png?raw=true");
-  }
-  .container {
-    flex-direction: column;
-  }
-  .right-section-wrapper {
-    height: 60vh;
-    padding: 0 10% 0 10%;
-  }
-  .title {
-    font-size: 42px;
-    padding-top: 40px;
-    padding-bottom: 32px;
-  }
-  .description {
-    padding-bottom: 0px;
-  }
-  .left-section-wrapper {
-    height: 65vh;
-  }
-  .disclaimer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-  }
-  .form {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-    flex-direction: column;
-  }
-  .form input {
-    width: 80%;
-    padding: 16px;
-    margin-left: 10%;
-    margin-left: 10%;
-    align-self: center;
-  }
-  .form button {
-    width: 80%;
-    padding: 16px;
-    margin-left: 10%;
-    margin-left: 10%;
-    align-self: center;
-  }
-  .form p {
-    width: 80%;
-    margin-left: 10%;
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .right-section-wrapper {
-    height: 75vh;
-  }
-  .title {
-    padding-top: 20px;
-  }
-}
 footer {
   background-color: #ffffff;
   padding-top: 5vh;
@@ -651,6 +566,60 @@ footer ul li {
   .Service {
     flex: 1 1 calc(50% - 20px); /* Two columns when screen is smaller */
   }
+  .container {
+    flex-direction: column;
+  }
+  .right-section-wrapper {
+    height: 30vh;
+    padding: 0 5% 0 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 42px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .description {
+    padding-bottom: 0px;
+  }
+  .left-section-wrapper {
+    height: 65vh;
+  }
+  .form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+  .form input {
+    width: 80%;
+    padding: 16px;
+    margin-left: 10%;
+    margin-left: 10%;
+    align-self: center;
+  }
+  .form button {
+    width: 80%;
+    padding: 16px;
+    margin-left: 10%;
+    margin-left: 10%;
+    align-self: center;
+  }
+  .form p {
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 961px) and (max-width: 400px) {
+  .right-section-wrapper {
+    height: 75vh;
+  }
+  .title {
+    padding-top: 20px;
+  }
 }
 @media (max-width: 961px) and (min-width: 600px) and (max-width: 961px) {
   .card {
@@ -667,7 +636,7 @@ footer ul li {
   .cards {
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: 550px;
   }
   .card {
     height: 75px;
@@ -729,6 +698,9 @@ footer ul li {
   }
 }
 @media (max-width: 600px) {
+  .PART_1 h1 {
+    font-size: 30px;
+  }
   nav ul {
     display: block;
     width: 100%;
@@ -761,5 +733,59 @@ footer ul li {
   }
   footer .bottom-bar {
     visibility: visible;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .right-section-wrapper {
+    height: 20vh;
+    padding: 0 10% 0 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 35px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .description {
+    padding-bottom: 0px;
+  }
+  .left-section-wrapper {
+    height: 65vh;
+  }
+  .form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+  .form input {
+    width: 80%;
+    padding: 16px;
+    margin-left: 10%;
+    margin-left: 10%;
+    align-self: center;
+  }
+  .form button {
+    width: 80%;
+    padding: 16px;
+    margin-left: 10%;
+    margin-left: 10%;
+    align-self: center;
+  }
+  .form p {
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 400px) {
+  .right-section-wrapper {
+    height: 75vh;
+  }
+  .title {
+    padding-top: 20px;
   }
 }
